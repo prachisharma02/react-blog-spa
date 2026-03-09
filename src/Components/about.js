@@ -39,7 +39,6 @@ const About = () => (
         </div>
 <div id="prachips-target" class="mboxDefault">
 this is the custom mbox default content</div>
-  </div>
         <div className="col-md-6 text-center">
           <img
             src={profileImage}
