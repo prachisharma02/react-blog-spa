@@ -17,7 +17,24 @@
         "at_property": "e4696173-c6e4-4012-eafd-ebc74eb7ab1c"
       };
     }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    adobe.target.getOffer({
+      mbox: "prachips-mbox",
+      success: function (offers) {
+        adobe.target.applyOffer({
+          mbox: "prachips-mbox",
+          selector: "#prachips-target",
+          offer: offers
+        });
+      },
+      error: function (status, error) {
+        console.error("Custom mbox failed:", status, error);
+      }
+    });
+  });
   </script>
+  
   <title>Portfolio</title>
 </head>
 
