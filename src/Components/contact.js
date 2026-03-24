@@ -1,7 +1,7 @@
 import React from "react";
 useEffect(() => {
   if (window.adobe && window.adobe.target) {
-    window.adobe.target.triggerView("subscription");
+    window.adobe.target.triggerView("contact");
   }
 }, []);
 

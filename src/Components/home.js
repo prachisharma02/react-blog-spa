@@ -2,7 +2,7 @@
 import { NavLink } from "react-router-dom";
 useEffect(() => {
   if (window.adobe && window.adobe.target) {
-    window.adobe.target.triggerView("subscription");
+    window.adobe.target.triggerView("homepage");
   }
 }, []);
 const Home = () => (
