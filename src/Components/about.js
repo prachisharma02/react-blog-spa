@@ -1,5 +1,9 @@
 import profileImage from "../assets/1000044856 (1).jpg";
-
+useEffect(() => {
+  if (window.adobe && window.adobe.target) {
+    window.adobe.target.triggerView("subscription");
+  }
+}, []);
 const About = () => (
   <div
     className="container-fluid py-5"

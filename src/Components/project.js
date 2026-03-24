@@ -1,5 +1,9 @@
 import React from "react";
-
+useEffect(() => {
+  if (window.adobe && window.adobe.target) {
+    window.adobe.target.triggerView("subscription");
+  }
+}, []);
 const Projects = () => {
   const projects = [
    {

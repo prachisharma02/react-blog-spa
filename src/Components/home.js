@@ -1,6 +1,10 @@
 
 import { NavLink } from "react-router-dom";
-
+useEffect(() => {
+  if (window.adobe && window.adobe.target) {
+    window.adobe.target.triggerView("subscription");
+  }
+}, []);
 const Home = () => (
   <div
     className="container-fluid text-center py-5"
